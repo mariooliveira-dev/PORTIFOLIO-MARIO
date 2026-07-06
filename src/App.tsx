@@ -116,7 +116,7 @@ export default function App() {
             </div>
             <div className="flex flex-col">
               <span className="font-display font-bold text-text-p tracking-tight leading-none group-hover:text-brand transition-colors">Cledmário Santos</span>
-              <span className="text-[10px] font-mono text-brand mt-1 tracking-wider uppercase font-semibold">ADS • IA • GESTÃO</span>
+              <span className="text-[10px] font-mono text-brand mt-1 tracking-wider uppercase font-semibold">ADS • WEB • GESTÃO</span>
             </div>
           </a>
 
@@ -266,8 +266,8 @@ export default function App() {
                   <p className="text-xs text-text-s font-medium">Projetos Web Ativos</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-bold text-text-p">IA</p>
-                  <p className="text-xs text-text-s font-medium">Integração Prática</p>
+                  <p className="text-2xl font-bold text-text-p">DEV</p>
+                  <p className="text-xs text-text-s font-medium">Sistemas & Sites</p>
                 </div>
               </div>
 
@@ -321,7 +321,7 @@ export default function App() {
                       </div>
                       <div className="flex items-center space-x-3 text-xs text-text-p bg-bg-dark/50 p-2.5 rounded-xl border border-card-border">
                         <Cpu className="w-4 h-4 text-brand shrink-0" />
-                        <span>Desenvolvimento Acelerado por IAs</span>
+                        <span>Desenvolvimento de Sistemas Web</span>
                       </div>
                     </div>
 
@@ -409,9 +409,9 @@ export default function App() {
                   </p>
                 </div>
                 <div className="bg-card-dark p-4 rounded-xl border border-card-border space-y-1.5">
-                  <span className="font-display font-bold text-text-p text-base">Inovação Orientada a IA</span>
+                  <span className="font-display font-bold text-text-p text-base">Inovação & Automação</span>
                   <p className="text-text-s text-xs leading-relaxed">
-                    Especialista em orquestrar e direcionar inteligências artificiais para gerar aplicações robustas integradas com bancos de dados reais.
+                    Especialista em integrar sistemas modernos de banco de dados e APIs para gerar aplicações robustas e automatizadas.
                   </p>
                 </div>
               </div>
@@ -608,20 +608,20 @@ export default function App() {
               </div>
             </div>
 
-            {/* AI & Developer Tools Pillar */}
+            {/* Developer Tools Pillar */}
             <div className="bg-card-dark border border-card-border rounded-2xl p-6 sm:p-8 space-y-6 shadow-lg">
               <div className="flex items-center space-x-3 mb-2">
                 <div className="w-10 h-10 rounded-lg bg-brand-light border border-brand/20 flex items-center justify-center text-brand">
                   <Cpu className="w-5 h-5" />
                 </div>
                 <div>
-                  <h3 className="font-display font-bold text-text-p text-lg">IA & Ferramentas Ágeis</h3>
-                  <p className="text-[11px] text-brand font-mono">DESENVOLVIMENTO ACELERADO</p>
+                  <h3 className="font-display font-bold text-text-p text-lg">Ferramentas & Deploy</h3>
+                  <p className="text-[11px] text-brand font-mono">CONTROLE & DEPLOY</p>
                 </div>
               </div>
 
               <p className="text-xs text-text-s leading-relaxed">
-                Uso pragmático de IA generativa e plataformas low-code para acelerar prazos de entrega e construir protótipos de alta complexidade em poucos dias.
+                Uso de sistemas modernos de controle de versão, builders ágeis e plataformas de hospedagem em nuvem para deploy contínuo de aplicações.
               </p>
 
               <div className="flex flex-wrap gap-2 pt-2">
@@ -630,7 +630,7 @@ export default function App() {
                     key={skill.name}
                     className="text-xs px-3 py-1.5 bg-brand text-bg-dark font-bold rounded-lg border border-brand hover:bg-brand-hover transition-all cursor-default flex items-center gap-1 shadow-sm shadow-brand/10"
                   >
-                    <Sparkles className="w-3 h-3 text-amber-200" />
+                    <Check className="w-3 h-3 text-bg-dark" />
                     {skill.name}
                   </span>
                 ))}
