@@ -10,11 +10,27 @@ export const personalInfo = {
 export const projects: Project[] = [
   {
     id: 'secult',
-    name: 'Sistema Integrado da Casa da Cultura',
-    description: 'Sistema web para gestão de matrículas, alunos, cursos, professores, chamadas, status, relatórios, impressão de fichas, carteirinha, dashboards e integração com Supabase.',
-    technologies: ['React', 'Supabase', 'Vercel', 'GitHub', 'JavaScript'],
-    link: 'https://sistema-integrado-da-secult.vercel.app',
+    name: 'Sistema Integrado da Secretaria de Cultura (SECULT)',
+    description: 'Sistema completo de gestão de matrículas, vagas, frequência, professores, unidades, bairros, escolas, dashboards administrativos, autenticação, banco de dados Supabase e integração com WhatsApp.',
+    technologies: ['React', 'TypeScript', 'Supabase', 'Vite', 'WhatsApp API'],
+    link: 'https://sistema-secult.vercel.app',
     category: 'systems'
+  },
+  {
+    id: 'simulador-ms-project',
+    name: 'Simulador MS Project',
+    description: 'Simulador gamificado voltado ao ensino de gerenciamento de projetos utilizando Microsoft Project. O sistema transforma o aprendizado em uma experiência semelhante a um jogo, onde o usuário evolui por fases, desafios e situações reais encontradas na indústria, aprendendo planejamento, cronograma, caminho crítico, recursos, custos e gerenciamento de projetos de forma divertida e prática.',
+    technologies: ['HTML', 'CSS', 'JavaScript', 'Responsividade', 'UX/UI'],
+    link: 'https://simulador-ms-project.vercel.app',
+    category: 'systems'
+  },
+  {
+    id: 'centerfisio',
+    name: 'Centro de Fisioterapia',
+    description: 'Sistema institucional desenvolvido para clínica de fisioterapia, contendo apresentação dos serviços, equipe, especialidades, contato, localização e identidade visual moderna.',
+    technologies: ['React', 'TypeScript', 'Vite', 'Responsividade'],
+    link: 'https://centerfisio.vercel.app',
+    category: 'websites'
   },
   {
     id: 'finance',
@@ -67,30 +83,32 @@ export const projects: Project[] = [
 ];
 
 export const skills: Skill[] = [
-  // Tech
-  { name: 'HTML', category: 'tech' },
-  { name: 'CSS', category: 'tech' },
+  // Tech / Core
+  { name: 'HTML5', category: 'tech' },
+  { name: 'CSS3', category: 'tech' },
   { name: 'JavaScript', category: 'tech' },
+  { name: 'TypeScript', category: 'tech' },
   { name: 'React', category: 'tech' },
-  { name: 'Supabase', category: 'tech' },
-  { name: 'Banco de dados', category: 'tech' },
+  { name: 'Vite', category: 'tech' },
+  { name: 'Node.js', category: 'tech' },
   
-  // Tools / Admin
+  // Tools / Platforms
+  { name: 'Supabase', category: 'tools' },
   { name: 'Git', category: 'tools' },
-  { name: 'Vite', category: 'tools' },
-  { name: 'Lovable', category: 'tools' },
   { name: 'GitHub', category: 'tools' },
   { name: 'Vercel', category: 'tools' },
+  { name: 'SQL', category: 'tools' },
+  { name: 'Banco de Dados', category: 'tools' },
   
   // Admin / Solutions
   { name: 'Excel (Intermediário ao Avançado)', category: 'admin' },
+  { name: 'UI/UX', category: 'admin' },
+  { name: 'Responsividade', category: 'admin' },
   { name: 'Sistemas administrativos', category: 'admin' },
   { name: 'Dashboards', category: 'admin' },
-  { name: 'Formulários online', category: 'admin' },
   { name: 'Automação de processos', category: 'admin' },
   { name: 'Organização de dados', category: 'admin' },
-  { name: 'Atendimento ao público', category: 'admin' },
-  { name: 'Área administrativa', category: 'admin' }
+  { name: 'Atendimento ao público', category: 'admin' }
 ];
 
 export const experiences: ExperienceItem[] = [
