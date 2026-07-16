@@ -77,7 +77,7 @@ export default function App() {
 
   const handleGenerateWhatsApp = (e: React.FormEvent) => {
     e.preventDefault();
-    const formattedMessage = `Olá Cledmário, meu nome é ${contactName || 'Visitante'}.\n\n*Assunto:* ${contactSubject}\n\n*Mensagem:*\n${contactMessage || 'Gostei muito do seu portfólio e gostaria de conversar sobre oportunidades!'}`;
+    const formattedMessage = `Olá Cledmário, meu nome é ${contactName || 'Visitante'}.\n\n*Assunto:* ${contactSubject}\n\n*Mensagem:*\n${contactMessage || 'Gostei muito do seu portfólio e gostaria de marcar uma reunião e conversar sobre oportunidades!'}`;
     const encoded = encodeURIComponent(formattedMessage);
     const url = `https://wa.me/${contactInfo.whatsapp}?text=${encoded}`;
     window.open(url, '_blank', 'noopener,noreferrer');
@@ -351,7 +351,7 @@ export default function App() {
                         <span>Status</span>
                         <span className="text-brand font-bold flex items-center gap-1.5">
                           <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping inline-block" />
-                          Disponível para Trabalho
+                          Disponível para Conversas
                         </span>
                       </div>
                     </div>
