@@ -1,27 +1,114 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@400;500;600;700&family=Sora:wght@400;500;600;700;800&display=swap');
 @import "tailwindcss";
 
 @theme {
   --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
-  --font-display: "Plus Jakarta Sans", "Inter", sans-serif;
+  --font-display: "Space Grotesk", "Sora", sans-serif;
   --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
   
-  /* Premium Light theme colors */
-  --color-brand: #2563eb;
-  --color-brand-light: rgba(37, 99, 235, 0.08);
-  --color-brand-hover: #1d4ed8;
-  --color-brand-dark: #1e40af;
-  --color-bg-dark: #f8fafc;
-  --color-card-dark: #ffffff;
-  --color-card-border: rgba(226, 232, 240, 0.9);
-  --color-text-p: #0f172a;
-  --color-text-s: #475569;
+  /* Premium Deep Cosmic Dark Theme Colors */
+  --color-brand: #3b82f6; /* Cool Bright Blue */
+  --color-brand-light: rgba(59, 130, 246, 0.08);
+  --color-brand-hover: #60a5fa;
+  --color-brand-dark: #1d4ed8;
+  --color-accent-teal: #10b981; /* Emerald/Teal */
+  --color-accent-cyan: #06b6d4; /* Electric Cyan */
+  
+  --color-bg-dark: #080b11; /* Pitch Tech Slate */
+  --color-card-dark: rgba(13, 19, 33, 0.45); /* Frosted Glass */
+  --color-card-border: rgba(255, 255, 255, 0.06);
+  --color-text-p: #f8fafc; /* Ultra crisp white */
+  --color-text-s: #94a3b8; /* Elegant slate gray */
 }
 
 @layer base {
   html {
     scroll-behavior: smooth;
-    background-color: var(--color-bg-dark);
+    background-color: #080b11;
+    color: #f8fafc;
+    overflow-x: hidden;
+  }
+
+  body {
+    background-color: #080b11;
+    font-family: var(--font-sans);
+    overflow-x: hidden;
   }
 }
 
+/* Custom Interactive Tech Grid Background */
+.tech-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.02) 1px, transparent 1px);
+  mask-image: radial-gradient(ellipse 60% 50% at 50% 50%, #000 70%, transparent 100%);
+  -webkit-mask-image: radial-gradient(ellipse 60% 50% at 50% 50%, #000 70%, transparent 100%);
+}
+
+/* Glowing Radial Accents */
+.radial-glow-blue {
+  background: radial-gradient(circle at center, rgba(59, 130, 246, 0.12) 0%, transparent 70%);
+}
+
+.radial-glow-cyan {
+  background: radial-gradient(circle at center, rgba(6, 182, 212, 0.08) 0%, transparent 75%);
+}
+
+.radial-glow-teal {
+  background: radial-gradient(circle at center, rgba(16, 185, 129, 0.06) 0%, transparent 70%);
+}
+
+/* Glassmorphism Preset */
+.glass-panel {
+  background: rgba(10, 15, 26, 0.55);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.glass-panel-hover {
+  transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel-hover:hover {
+  background: rgba(14, 22, 38, 0.7);
+  border-color: rgba(59, 130, 246, 0.25);
+  box-shadow: 
+    0 10px 30px -10px rgba(0, 0, 0, 0.7),
+    0 0 20px -2px rgba(59, 130, 246, 0.15);
+  transform: translateY(-2px);
+}
+
+/* Subtle Shimmer Effect */
+@keyframes shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #f8fafc, #60a5fa, #10b981, #f8fafc);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: shimmer 12s linear infinite;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #080b11;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(59, 130, 246, 0.2);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(59, 130, 246, 0.4);
+}
