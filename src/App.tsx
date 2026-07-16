@@ -283,7 +283,7 @@ export default function App() {
                   <p className="text-xs text-text-s font-medium">Formação Superior</p>
                 </div>
                 <div>
-                  <p className="text-2xl font-bold text-text-p">09</p>
+                  <p className="text-2xl font-bold text-text-p">10</p>
                   <p className="text-xs text-text-s font-medium">Projetos Ativos</p>
                 </div>
                 <div>
@@ -338,7 +338,7 @@ export default function App() {
                       </div>
                       <div className="flex items-center space-x-3 text-xs text-text-p bg-slate-50 border border-slate-100 p-2.5 rounded-xl">
                         <Briefcase className="w-4 h-4 text-brand shrink-0" />
-                        <span>Foco em Sistemas Administrativos</span>
+                        <span>Sistemas Administrativos</span>
                       </div>
                       <div className="flex items-center space-x-3 text-xs text-text-p bg-slate-50 border border-slate-100 p-2.5 rounded-xl">
                         <Cpu className="w-4 h-4 text-brand shrink-0" />
@@ -351,7 +351,7 @@ export default function App() {
                         <span>Status</span>
                         <span className="text-brand font-bold flex items-center gap-1.5">
                           <span className="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-ping inline-block" />
-                          Disponível para Conversas
+                          Disponível para Conversas.
                         </span>
                       </div>
                     </div>
