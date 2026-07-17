@@ -387,9 +387,7 @@ export default function App() {
             className="glass-panel p-5 rounded-2xl max-w-md mx-auto flex items-center justify-between border border-white/5 shadow-xl shadow-black/20"
           >
             <div className="flex items-center space-x-3 text-left">
-              <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-brand to-accent-cyan text-white flex items-center justify-center font-bold font-display shadow-md shadow-brand/15">
-                CS
-              </div>
+              <Logo simplified className="w-12 h-12 shrink-0" />
               <div>
                 <h4 className="text-xs font-bold text-white font-display">Cledmário Santos Oliveira</h4>
                 <p className="text-[10px] font-mono text-brand">@mariooliveira-dev</p>
